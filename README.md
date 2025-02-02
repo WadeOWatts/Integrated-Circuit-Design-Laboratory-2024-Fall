@@ -1,1 +1,1 @@
-# -Integrated-Circuit-Design-Laboratory-2024-Fall
+# Integrated-Circuit-Design-Laboratory-2024-Fall
