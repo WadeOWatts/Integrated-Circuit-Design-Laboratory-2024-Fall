@@ -1,6 +1,12 @@
-# Lab 2: Baseball Game System
+# Lab 2: Three-Inning Baseball Game
 
-### Topic: State Machine & Game Simulation
+### Topic: Sequential Circuits
+
+| Submit | Cycle time | Area | Latency | Performance | Rank | Pass Rate|
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| 1st demo | 10 | 5438.664 | 99 | 538427.736 | 130 / 154 | 97.45% |
+
+Performance = Area * Latency
 
 ### Description
 The goal of this lab is to design a simplified **baseball game system** that tracks the progress of a three-inning game. The system simulates various batter actions (e.g., hits, home runs, walks), updates base runner status, and calculates scores. A state machine is used to manage inning transitions, track outs, and determine the final game result.
@@ -46,10 +52,3 @@ The goal of this lab is to design a simplified **baseball game system** that tra
 | score_B    | output | 8    | Team B’s score |
 | result     | output | 2    | Final game result |
 
-### Files
-- `baseball_game.v` - Verilog module implementing the baseball game system.
-- `baseball_tb.v` - Testbench for simulation.
-- `README.md` - This file.
-
-## Author
-[Your Name]
