@@ -2,6 +2,12 @@
 
 ### Topic: Cell Based Design & Combinational Circuit
 
+| Submit | Cycle time | Area | Performance | Rank | Pass Rate|
+| --- | --- | --- | --- | --- | --- |
+| 1st demo | 20 | 75888.48994 | 75888.48994 | 143 / 154 | 97.45% |
+
+Performance = Area
+
 ### Description
 The goal of this lab is to design a system that verifies a credit card number and determines the maximum number of snacks that can be purchased within the available balance.
 
@@ -25,8 +31,4 @@ The goal of this lab is to design a system that verifies a credit card number an
    
     - **out_valid**: `1` if the credit card is valid, otherwise `0`.
     - **out_change**: Remaining balance if the card is valid; otherwise, it returns the original balance.
-
-### Handed in 1st demo
-### Rank: 143 / 154 (By area)
-### Pass rate: 97.45%
 
