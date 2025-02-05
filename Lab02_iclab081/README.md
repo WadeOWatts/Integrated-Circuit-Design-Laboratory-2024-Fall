@@ -29,15 +29,6 @@ The goal of this lab is to design a simplified **baseball game system** that tra
     - **Ground Ball (3’d6):** May cause a **double play** if there is a runner on 1B.
     - **Fly Ball (3’d7):** Can result in a **sacrifice fly** if there is a runner on 3B.
 
-3. **Game Output**
-    - **out_valid**: High when output is valid.
-    - **score_A**: 8-bit output for **Team A’s** final score.
-    - **score_B**: 8-bit output for **Team B’s** final score.
-    - **result**: Determines the game result:
-      - `0` → Team A wins
-      - `1` → Team B wins
-      - `2` → Tie
-
 ### I/O Specification
 | Signal Name | Type   | Width | Definition |
 |------------|--------|------|------------|
