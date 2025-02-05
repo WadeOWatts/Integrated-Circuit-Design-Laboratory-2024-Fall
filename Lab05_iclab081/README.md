@@ -14,8 +14,8 @@ The goal of this lab is to implement **Template Matching with Image Processing (
 ### Functionality
 1. **Template Matching (Cross Correlation)**
     - Detects objects in an image using a **3×3 template**.
-    - The formula for cross correlation:
-      \[ R(x,y) = \sum Template(x',y') \times Image(x+x', y+y') \]
+    - The formula for cross correlation:  
+        R(x, y) = sum of [Template(x', y') * Image(x + x', y + y')]
     - Zero padding is applied before the correlation.
 
 2. **Image Processing Operations**
