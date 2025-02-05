@@ -26,18 +26,18 @@ The **Stock Trading Program** assesses **market risks** using **four key indices
 ### Formula Computation
 | Formula | Input | Computation |
 |---------|------|-------------|
-| **A**  | `3'd0` | \\( R = \\lfloor (I_A + I_B + I_C + I_D) / 4 \\rfloor \\) |
-| **B**  | `3'd1` | \\( R = \\max(I_A, I_B, I_C, I_D) - \\min(I_A, I_B, I_C, I_D) \\) |
-| **C**  | `3'd2` | \\( R = \\min(I_A, I_B, I_C, I_D) \\) |
-| **D**  | `3'd3` | Counts indices \\( \\geq 2047 \\) |
-| **E**  | `3'd4` | Counts indices \\( \\geq TI_A, TI_B, TI_C, TI_D \\) |
+| **A**  | `3'd0` | R = floor [(I_A + I_B + I_C + I_D) / 4] |
+| **B**  | `3'd1` | R = max(I_A, I_B, I_C, I_D) - min(I_A, I_B, I_C, I_D) |
+| **C**  | `3'd2` | R = min(I_A, I_B, I_C, I_D) |
+| **D**  | `3'd3` | Counts indices >= 2047 |
+| **E**  | `3'd4` | Counts indices >= TI_A, TI_B, TI_C, TI_D |
 | **F**  | `3'd5` | Computes max-arg mean for G(A), G(B), G(C), G(D) |
 | **G**  | `3'd6` | Sorts G-values and computes weighted sum |
 | **H**  | `3'd7` | Computes average of G-values |
 
 - **Indices**: `I(A), I(B), I(C), I(D)` are from early trading.
 - **Threshold values**: Change based on selected **mode** (`Insensitive`, `Normal`, `Sensitive`).
-- **Warnings** are issued when \\( R \\geq \\text{Threshold} \\).
+- **Warnings** are issued when R >= Threshold).
 
 ### Warning Messages
 | Action | Warning Code |
