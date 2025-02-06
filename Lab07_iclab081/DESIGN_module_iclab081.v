@@ -318,7 +318,6 @@ output reg out_valid;
 output reg [7:0] out_data;
 output reg busy;
 
-// You can use the the custom flag ports for your design
 input  flag_handshake_to_clk2;
 output reg flag_clk2_to_handshake;
 

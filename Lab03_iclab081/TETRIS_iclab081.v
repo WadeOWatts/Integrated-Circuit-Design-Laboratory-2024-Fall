@@ -1,15 +1,3 @@
-/**************************************************************************/
-// Copyright (c) 2024, OASIS Lab
-// MODULE: TETRIS
-// FILE NAME: TETRIS.v
-// VERSRION: 1.0
-// DATE: August 15, 2024
-// AUTHOR: Yu-Hsuan Hsu, NYCU IEE
-// DESCRIPTION: ICLAB2024FALL / LAB3 / TETRIS
-// MODIFICATION HISTORY:
-// Date                 Description
-// 
-/**************************************************************************/
 module TETRIS (
 	//INPUT
 	rst_n,

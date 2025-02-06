@@ -1,17 +1,3 @@
-/**************************************************************************/
-// Copyright (c) 2024, OASIS Lab
-// MODULE: SA
-// FILE NAME: SA.v
-// VERSRION: 1.0
-// DATE: Nov 06, 2024
-// AUTHOR: Yen-Ning Tung, NYCU AIG
-// CODE TYPE: RTL or Behavioral Level (Verilog)
-// DESCRIPTION: 2024 Fall IC Lab / Exersise Lab08 / SA
-// MODIFICATION HISTORY:
-// Date                 Description
-// 
-/**************************************************************************/
-
 // synopsys translate_off
 `ifdef RTL
 	`include "GATED_OR.v"
@@ -197,69 +183,7 @@ GATED_OR GATED_out_sub2_out_6 (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_2), .RST_N(rs
 GATED_OR GATED_out_sub2_out_7 (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_2), .RST_N(rst_n), .CLOCK_GATED(clk_gated_sub2_out[7]));
 GATED_OR GATED_out_sub2_out_valid (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_2), .RST_N(rst_n), .CLOCK_GATED(clk_gated_sub2_out_valid));
 GATED_OR GATED_out_sub3_S_0 (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_3), .RST_N(rst_n), .CLOCK_GATED(clk_gated_sub3_S));
-// GATED_OR GATED_out_sub3_S_1 (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_3), .RST_N(rst_n), .CLOCK_GATED(clk_gated_sub3_S[1]));
-// GATED_OR GATED_out_sub3_S_2 (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_3), .RST_N(rst_n), .CLOCK_GATED(clk_gated_sub3_S[2]));
-// GATED_OR GATED_out_sub3_S_3 (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_3), .RST_N(rst_n), .CLOCK_GATED(clk_gated_sub3_S[3]));
-// GATED_OR GATED_out_sub3_S_4 (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_3), .RST_N(rst_n), .CLOCK_GATED(clk_gated_sub3_S[4]));
-// GATED_OR GATED_out_sub3_S_5 (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_3), .RST_N(rst_n), .CLOCK_GATED(clk_gated_sub3_S[5]));
-// GATED_OR GATED_out_sub3_S_6 (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_3), .RST_N(rst_n), .CLOCK_GATED(clk_gated_sub3_S[6]));
-// GATED_OR GATED_out_sub3_S_7 (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_3), .RST_N(rst_n), .CLOCK_GATED(clk_gated_sub3_S[7]));
-// GATED_OR GATED_out_sub3_S_8 (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_3), .RST_N(rst_n), .CLOCK_GATED(clk_gated_sub3_S[8]));
-// GATED_OR GATED_out_sub3_S_9 (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_3), .RST_N(rst_n), .CLOCK_GATED(clk_gated_sub3_S[9]));
-// GATED_OR GATED_out_sub3_S_10 (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_3), .RST_N(rst_n), .CLOCK_GATED(clk_gated_sub3_S[10]));
-// GATED_OR GATED_out_sub3_S_11 (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_3), .RST_N(rst_n), .CLOCK_GATED(clk_gated_sub3_S[11]));
-// GATED_OR GATED_out_sub3_S_12 (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_3), .RST_N(rst_n), .CLOCK_GATED(clk_gated_sub3_S[12]));
-// GATED_OR GATED_out_sub3_S_13 (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_3), .RST_N(rst_n), .CLOCK_GATED(clk_gated_sub3_S[13]));
-// GATED_OR GATED_out_sub3_S_14 (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_3), .RST_N(rst_n), .CLOCK_GATED(clk_gated_sub3_S[14]));
-// GATED_OR GATED_out_sub3_S_15 (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_3), .RST_N(rst_n), .CLOCK_GATED(clk_gated_sub3_S[15]));
-// GATED_OR GATED_out_sub3_S_16 (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_3), .RST_N(rst_n), .CLOCK_GATED(clk_gated_sub3_S[16]));
-// GATED_OR GATED_out_sub3_S_17 (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_3), .RST_N(rst_n), .CLOCK_GATED(clk_gated_sub3_S[17]));
-// GATED_OR GATED_out_sub3_S_18 (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_3), .RST_N(rst_n), .CLOCK_GATED(clk_gated_sub3_S[18]));
-// GATED_OR GATED_out_sub3_S_19 (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_3), .RST_N(rst_n), .CLOCK_GATED(clk_gated_sub3_S[19]));
-// GATED_OR GATED_out_sub3_S_20 (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_3), .RST_N(rst_n), .CLOCK_GATED(clk_gated_sub3_S[20]));
-// GATED_OR GATED_out_sub3_S_21 (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_3), .RST_N(rst_n), .CLOCK_GATED(clk_gated_sub3_S[21]));
-// GATED_OR GATED_out_sub3_S_22 (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_3), .RST_N(rst_n), .CLOCK_GATED(clk_gated_sub3_S[22]));
-// GATED_OR GATED_out_sub3_S_23 (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_3), .RST_N(rst_n), .CLOCK_GATED(clk_gated_sub3_S[23]));
-// GATED_OR GATED_out_sub3_S_24 (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_3), .RST_N(rst_n), .CLOCK_GATED(clk_gated_sub3_S[24]));
-// GATED_OR GATED_out_sub3_S_25 (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_3), .RST_N(rst_n), .CLOCK_GATED(clk_gated_sub3_S[25]));
-// GATED_OR GATED_out_sub3_S_26 (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_3), .RST_N(rst_n), .CLOCK_GATED(clk_gated_sub3_S[26]));
-// GATED_OR GATED_out_sub3_S_27 (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_3), .RST_N(rst_n), .CLOCK_GATED(clk_gated_sub3_S[27]));
-// GATED_OR GATED_out_sub3_S_28 (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_3), .RST_N(rst_n), .CLOCK_GATED(clk_gated_sub3_S[28]));
-// GATED_OR GATED_out_sub3_S_29 (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_3), .RST_N(rst_n), .CLOCK_GATED(clk_gated_sub3_S[29]));
-// GATED_OR GATED_out_sub3_S_30 (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_3), .RST_N(rst_n), .CLOCK_GATED(clk_gated_sub3_S[30]));
-// GATED_OR GATED_out_sub3_S_31 (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_3), .RST_N(rst_n), .CLOCK_GATED(clk_gated_sub3_S[31]));
-// GATED_OR GATED_out_sub3_S_32 (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_3), .RST_N(rst_n), .CLOCK_GATED(clk_gated_sub3_S[32]));
-// GATED_OR GATED_out_sub3_S_33 (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_3), .RST_N(rst_n), .CLOCK_GATED(clk_gated_sub3_S[33]));
-// GATED_OR GATED_out_sub3_S_34 (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_3), .RST_N(rst_n), .CLOCK_GATED(clk_gated_sub3_S[34]));
-// GATED_OR GATED_out_sub3_S_35 (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_3), .RST_N(rst_n), .CLOCK_GATED(clk_gated_sub3_S[35]));
-// GATED_OR GATED_out_sub3_S_36 (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_3), .RST_N(rst_n), .CLOCK_GATED(clk_gated_sub3_S[36]));
-// GATED_OR GATED_out_sub3_S_37 (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_3), .RST_N(rst_n), .CLOCK_GATED(clk_gated_sub3_S[37]));
-// GATED_OR GATED_out_sub3_S_38 (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_3), .RST_N(rst_n), .CLOCK_GATED(clk_gated_sub3_S[38]));
-// GATED_OR GATED_out_sub3_S_39 (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_3), .RST_N(rst_n), .CLOCK_GATED(clk_gated_sub3_S[39]));
-// GATED_OR GATED_out_sub3_S_40 (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_3), .RST_N(rst_n), .CLOCK_GATED(clk_gated_sub3_S[40]));
-// GATED_OR GATED_out_sub3_S_41 (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_3), .RST_N(rst_n), .CLOCK_GATED(clk_gated_sub3_S[41]));
-// GATED_OR GATED_out_sub3_S_42 (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_3), .RST_N(rst_n), .CLOCK_GATED(clk_gated_sub3_S[42]));
-// GATED_OR GATED_out_sub3_S_43 (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_3), .RST_N(rst_n), .CLOCK_GATED(clk_gated_sub3_S[43]));
-// GATED_OR GATED_out_sub3_S_44 (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_3), .RST_N(rst_n), .CLOCK_GATED(clk_gated_sub3_S[44]));
-// GATED_OR GATED_out_sub3_S_45 (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_3), .RST_N(rst_n), .CLOCK_GATED(clk_gated_sub3_S[45]));
-// GATED_OR GATED_out_sub3_S_46 (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_3), .RST_N(rst_n), .CLOCK_GATED(clk_gated_sub3_S[46]));
-// GATED_OR GATED_out_sub3_S_47 (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_3), .RST_N(rst_n), .CLOCK_GATED(clk_gated_sub3_S[47]));
-// GATED_OR GATED_out_sub3_S_48 (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_3), .RST_N(rst_n), .CLOCK_GATED(clk_gated_sub3_S[48]));
-// GATED_OR GATED_out_sub3_S_49 (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_3), .RST_N(rst_n), .CLOCK_GATED(clk_gated_sub3_S[49]));
-// GATED_OR GATED_out_sub3_S_50 (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_3), .RST_N(rst_n), .CLOCK_GATED(clk_gated_sub3_S[50]));
-// GATED_OR GATED_out_sub3_S_51 (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_3), .RST_N(rst_n), .CLOCK_GATED(clk_gated_sub3_S[51]));
-// GATED_OR GATED_out_sub3_S_52 (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_3), .RST_N(rst_n), .CLOCK_GATED(clk_gated_sub3_S[52]));
-// GATED_OR GATED_out_sub3_S_53 (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_3), .RST_N(rst_n), .CLOCK_GATED(clk_gated_sub3_S[53]));
-// GATED_OR GATED_out_sub3_S_54 (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_3), .RST_N(rst_n), .CLOCK_GATED(clk_gated_sub3_S[54]));
-// GATED_OR GATED_out_sub3_S_55 (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_3), .RST_N(rst_n), .CLOCK_GATED(clk_gated_sub3_S[55]));
-// GATED_OR GATED_out_sub3_S_56 (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_3), .RST_N(rst_n), .CLOCK_GATED(clk_gated_sub3_S[56]));
-// GATED_OR GATED_out_sub3_S_57 (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_3), .RST_N(rst_n), .CLOCK_GATED(clk_gated_sub3_S[57]));
-// GATED_OR GATED_out_sub3_S_58 (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_3), .RST_N(rst_n), .CLOCK_GATED(clk_gated_sub3_S[58]));
-// GATED_OR GATED_out_sub3_S_59 (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_3), .RST_N(rst_n), .CLOCK_GATED(clk_gated_sub3_S[59]));
-// GATED_OR GATED_out_sub3_S_60 (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_3), .RST_N(rst_n), .CLOCK_GATED(clk_gated_sub3_S[60]));
-// GATED_OR GATED_out_sub3_S_61 (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_3), .RST_N(rst_n), .CLOCK_GATED(clk_gated_sub3_S[61]));
-// GATED_OR GATED_out_sub3_S_62 (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_3), .RST_N(rst_n), .CLOCK_GATED(clk_gated_sub3_S[62]));
-// GATED_OR GATED_out_sub3_S_63 (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_3), .RST_N(rst_n), .CLOCK_GATED(clk_gated_sub3_S[63]));
+
 GATED_OR GATED_out_sub3_S_out_valid (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_3), .RST_N(rst_n), .CLOCK_GATED(clk_gated_sub3_out_valid));
 GATED_OR GATED_out_sub4_counter (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_4), .RST_N(rst_n), .CLOCK_GATED(clk_gated_sub4_counter));
 GATED_OR GATED_out_sub4_s_set (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_4), .RST_N(rst_n), .CLOCK_GATED(clk_gated_sub4_s_set));
@@ -289,10 +213,6 @@ GATED_OR GATED_out_out_valid (.CLOCK(clk), .SLEEP_CTRL(Sleep_ctrl_4), .RST_N(rst
 //==============================================//
 //                  design                      //
 //==============================================//
-// QKV_generation Sub1(.clk(clk), .rst_n(rst_n),.SLEEP_CTRL(Sleep_ctrl_1), .in_valid(design_qkv), .size(size), .T(t_temp), .M(kqv_temp), .out_valid(qkv_mat1), .out(kq), .out_valid2(qkv_mat2), .out2(V));
-// Matmul1_and_scale Sub2 (.clk(clk), .rst_n(rst_n),.SLEEP_CTRL(Sleep_ctrl_2), .size(size), .in_valid(qkv_mat1), .in(kq), .out_valid(mat1_relu), .A(A));
-// ReLU Sub3 (.clk(clk), .rst_n(rst_n),.SLEEP_CTRL(Sleep_ctrl_3), .size(size), .in_valid(mat1_relu), .A(A), .out_valid(relu_mat2), .S(S));
-// Matmul2 Sub4 (.clk(clk), .rst_n(rst_n),.SLEEP_CTRL(Sleep_ctrl_4), .size(size), .in_valid(relu_mat2), .S(S), .in_valid2(qkv_mat2), .V(V) , .out_valid(out_valid_wire), .P(out_data_wire), .out_last(out_last));
 
 assign kq = out;
 assign V = out2;

@@ -1,16 +1,3 @@
-/**************************************************************************/
-// Copyright (c) 2024, OASIS Lab
-// MODULE: PATTERN
-// FILE NAME: PATTERN.v
-// VERSRION: 1.0
-// DATE: August 15, 2024
-// AUTHOR: Yu-Hsuan Hsu, NYCU IEE
-// DESCRIPTION: ICLAB2024FALL / LAB3 / PATTERN
-// MODIFICATION HISTORY:
-// Date                 Description
-// 
-/**************************************************************************/
-
 `ifdef RTL
     `define CYCLE_TIME 40.0
 `endif

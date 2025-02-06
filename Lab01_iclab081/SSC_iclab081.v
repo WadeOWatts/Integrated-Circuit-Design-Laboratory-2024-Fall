@@ -1,22 +1,3 @@
-//############################################################################
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//   (C) Copyright Laboratory System Integration and Silicon Implementation
-//   All Right Reserved
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//
-//   ICLAB 2024 Fall
-//   Lab01 Exercise		: Snack Shopping Calculator
-//   Author     		  : Yu-Hsiang Wang
-//
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//
-//   File Name   : SSC.v
-//   Module Name : SSC
-//   Release version : V1.0 (Release Date: 2024-09)
-//
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//############################################################################
-
 module SSC(
     // Input signals
     card_num,
@@ -41,10 +22,6 @@ output [8:0] out_change;
 //================================================================
 //    Wire & Registers 
 //================================================================
-// Declare the wire/reg you would use in your circuit
-// remember 
-// wire for port connection and cont. assignment
-// reg for proc. assignment
 
 wire [3:0] a, c, e, g, i, k, m, o;
 wire [3:0] b, d, f, h, j, l, n, p;
@@ -71,9 +48,6 @@ reg [10:0] total_price_sorted_cummulative_2;
 reg [10:0] total_price_sorted_cummulative_1;
 reg [10:0] total_price_sorted_cummulative_0, C34, C56, C78;
 reg [8:0] out_change_temp;
-
-//wire [8:0] snack_sum;
-
 
 //================================================================
 //    DESIGN

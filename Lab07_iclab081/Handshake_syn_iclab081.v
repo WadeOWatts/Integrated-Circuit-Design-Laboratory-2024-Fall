@@ -25,15 +25,13 @@ output reg sidle;
 output reg dvalid;
 output reg [WIDTH-1:0] dout;
 
-// You can change the input / output of the custom flag ports
+
 output reg flag_handshake_to_clk1;
 input flag_clk1_to_handshake;
 
 output reg flag_handshake_to_clk2;
 input flag_clk2_to_handshake;
 
-// Remember:
-//   Don't modify the signal name
 reg sreq;
 wire dreq;
 reg dack;
@@ -99,17 +97,6 @@ always @(posedge sclk or negedge rst_n) begin
         endcase
     end
 end
-
-// always @(posedge sclk or negedge rst_n) begin
-//     if (!rst_n) begin
-//         flag_handshake_to_clk1 <= 'b0;
-//     end else begin
-//         case (flag_handshake_to_clk1)
-//             0: flag_handshake_to_clk1 = (flag_clk1_to_handshake && sidle) ? 'b1 : 'b0;
-//             1: flag_handshake_to_clk1 = sack ? 'b0 : 'b1;
-//         endcase
-//     end
-// end
 
 always @(posedge dclk or negedge rst_n) begin
     if (!rst_n) begin

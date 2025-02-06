@@ -1,13 +1,3 @@
-//############################################################################
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//    (C) Copyright System Integration and Silicon Implementation Laboratory
-//    All Right Reserved
-//		Date		: 2024/10
-//		Version		: v1.0
-//   	File Name   : HAMMING_IP.v
-//   	Module Name : HAMMING_IP
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//############################################################################
 module HAMMING_IP #(parameter IP_BIT = 11) (
     // Input signals
     IN_code,

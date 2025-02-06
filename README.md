@@ -1,4 +1,4 @@
-# Integrated-Circuit-Design-Laboratory-2024-Fall
+# Integrated Circuit Design Laboratory 2024 Fall
 
 **Note: 
 This repo is a record of how I burned my liver, mind, and soul. 

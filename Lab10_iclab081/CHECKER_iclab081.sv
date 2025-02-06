@@ -1,17 +1,3 @@
-/*
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-NYCU Institute of Electronic
-2023 Autumn IC Design Laboratory 
-Lab10: SystemVerilog Coverage & Assertion
-File Name   : CHECKER.sv
-Module Name : CHECKER
-Release version : v1.0 (Release Date: Nov-2023)
-Author : Jui-Huang Tsai (erictsai.10@nycu.edu.tw)
-//   (C) Copyright Laboratory System Integration and Silicon Implementation
-//   All Right Reserved
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-*/
-
 `include "Usertype.sv"
 module Checker(input clk, INF.CHECKER inf);
 import usertype::*;

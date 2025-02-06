@@ -1,22 +1,3 @@
-//############################################################################
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//   (C) Copyright Laboratory System Integration and Silicon Implementation
-//   All Right Reserved
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//
-//   ICLAB 2023 Fall
-//   Lab04 Exercise		: Convolution Neural Network 
-//   Author     		: Yu-Chi Lin (a6121461214.st12@nycu.edu.tw)
-//
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//
-//   File Name   : CNN.v
-//   Module Name : CNN
-//   Release version : V1.0 (Release Date: 2024-10)
-//
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//############################################################################
-
 module CNN(
     //Input Port
     clk,
@@ -235,7 +216,7 @@ always @(posedge clk or negedge rst_n) begin
 end
 
 assign ptr_d36 = ptr / 36;
-assign ptr_cal = ptr % 36 / 6 * 7 + ptr % 6; //ptr % 36 / 6 * 7 + ptr % 6
+assign ptr_cal = ptr % 36 / 6 * 7 + ptr % 6; 
 
 assign U1_a = (cs_process == CONV || cs_process == CONV_CMP) ? img_temp[ptr_d36][ptr_cal] :
                 cs_process == FLCN ? Weight_temp[ptr_s116][0] : 32'bx;

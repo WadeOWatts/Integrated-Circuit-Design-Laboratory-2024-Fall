@@ -15,23 +15,8 @@ module BB(
 );
 
 //==============================================//
-//             Action Memo for Students         //
-// Action code interpretation:
-// 3’d0: Walk (BB)
-// 3’d1: 1H (single hit)
-// 3’d2: 2H (double hit)
-// 3’d3: 3H (triple hit)
-// 3’d4: HR (home run)
-// 3’d5: Bunt (short hit)
-// 3’d6: Ground ball
-// 3’d7: Fly ball
-//==============================================//
-
-//==============================================//
 //             Parameter and Integer            //
 //==============================================//
-// State declaration for FSM
-// Example: parameter IDLE = 3'b000;
 
 parameter IDLE = 2'd0;
 parameter INPUT = 2'd1;
@@ -105,9 +90,6 @@ end
 //==============================================//
 //             Base and Score Logic             //
 //==============================================//
-// Handle base runner movements and score calculation.
-// Update bases and score depending on the action:
-// Example: Walk, Hits (1H, 2H, 3H), Home Runs, etc.
 
 always @(posedge clk or negedge rst_n) begin                    // inning
     if (!rst_n) begin
@@ -516,7 +498,6 @@ end
 //==============================================//
 //                Output Block                  //
 //==============================================//
-// Decide when to set out_valid high, and output score_A, score_B, and result.
 
 always @(posedge clk or negedge rst_n) begin
     if (!rst_n) begin

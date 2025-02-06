@@ -1,14 +1,3 @@
-//############################################################################
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//    (C) Copyright System Integration and Silicon Implementation Laboratory
-//    All Right Reserved
-//		Date		: 2024/9
-//		Version		: v1.0
-//   	File Name   : MDC.v
-//   	Module Name : MDC
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//############################################################################
-
 //synopsys translate_off
 `include "HAMMING_IP.v"
 //synopsys translate_on
